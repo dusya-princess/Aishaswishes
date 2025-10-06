@@ -2,6 +2,13 @@
 padding: 0%;
 margin: 0%;
 }
+
+@font-face {
+    font-family: titfont;
+    src: url(sf-wonder-comic-blotch-italic.woff2);
+}
+
+
 body{
     background: linear-gradient(135deg, #21830f,#fa5f5f,#f5faa8,#d286f6);
     background-size: 400% 400%;
@@ -19,4 +26,21 @@ body{
      100%{
         background-position: 0% 50%;
     }
+}
+
+h1{
+font-family: titfont,sans-serif;
+width: 100vw;
+text-align: center;
+font-size: 37px;
+color: black;
+text-shadow: 0 0 10px aliceblue;
+
+}
+
+.paper{
+    width: 90vw;
+    max-width: 600px;
+    margin-left: 5vw;
+    margin-top: 20vh;
 }
