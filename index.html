@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aishas Wishes</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>My wishes</h1>
     <img src="paper.png" class="paper" alt="">
-    <div>
-
+    <div class="boxwish" >
+        <div class="wish">travel</div>
+        <img src="wishes pics/santorini.jpg" class="imgWish" alt="">
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script>
+        const hammer=new Hammer(document.body);
+        hammer.on('swipeleft',()=>{
+            previouswish();
+        });
+         hammer.on('swiperight',()=>{
+            nextwish();
+        });
+    </script>
 </body>
 </html>
