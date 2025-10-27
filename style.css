@@ -10,7 +10,7 @@ margin: 0%;
 
 
 body{
-    background: linear-gradient(135deg, #21830f,#fa5f5f,#f5faa8,#d286f6);
+    background: linear-gradient(135deg, #E8C7C8,#E6E6FA,#FADADD,#D8BFD8);
     background-size: 400% 400%;
     min-height: 100vh;
     animation: bg 15s ease-in-out infinite;
@@ -40,7 +40,7 @@ text-shadow: 0 0 10px aliceblue;
 
 .paper{
     width: 90vw;
-    max-width: 600px;
+    max-width: 500px;
     margin-left: 5vw;
-    margin-top: 20vh;
+    margin-top: 1vh;
 }
