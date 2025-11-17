@@ -1,17 +1,32 @@
 var currentwish=1;
-var list=['travel','learn to cook'];
-var imagelist=['santorini.jpg','strawberry cake.jpg'];
-
+var list=['travel','learn to cook','JBL headphones'];
+var imagelist=['santorini.jpg','strawberry cake.jpg','headphones.png'];
+// 550px - 
 function previouswish(){
     currentwish--;
-    document.getElementsByClassName("wish")[0].innerHTML=list[currentwish-1];
-    document.getElementsByClassName('imgWish')[0].src=`wishes pics/${imagelist[currentwish-1]}`;
+    if (currentwish==0){
+        currentwish=list.length;
+    }
+changewish();
 }
 
 function nextwish(){
     currentwish++;
-    document.getElementsByClassName("wish")[0].innerHTML=list[currentwish-1];
+    if (currentwish>list.length){
+        currentwish=1;
+    }
+  changewish();
+}
+
+
+function changewish(){
+     document.getElementsByClassName("wish")[0].innerHTML=list[currentwish-1];
     document.getElementsByClassName('imgWish')[0].src=`wishes pics/${imagelist[currentwish-1]}`;
+    if(currentwish==3){
+   document.getElementsByClassName('imgWish')[0].style.margintop='10vh' ;    
+    }else{
+   document.getElementsByClassName('imgWish')[0].style.margintop='0vh' ;  
+    }
 }
 
 function createsnowflake(){

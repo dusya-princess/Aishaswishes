@@ -35,14 +35,22 @@ text-align: center;
 font-size: 37px;
 color: black;
 text-shadow: 0 0 10px aliceblue;
+margin-top: 40px;
 
+}
+
+.boxpaper{
+
+    display: flex;
+    width: 100vw;
+    justify-content: center;
 }
 
 .paper{
     width: 90vw;
-    max-width: 500px;
-    height: 70vh;
-    margin-left: 5vw;
+    max-width: 580px;
+    height: 90vh;
+    
     margin-top: 1vh;
 }
 
@@ -51,6 +59,10 @@ position:absolute;
 top: 20vh;
 width: 80vw;
 left: 10vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+align-content:center;
 
 
 }
@@ -65,7 +77,8 @@ font-family: titfont,sans-serif;
 
 .imgWish{
 width: 60vw;
-margin-left: 10vw;
+max-width: 350px;
+/*max-height: 300px;*/
 margin-top: 5vh;
 }
 
@@ -83,5 +96,12 @@ margin-top: 5vh;
     to{
         transform: translateY(100vh);
         opacity: 0;
+    }
+}
+
+
+@media (max-width:500px){
+    .paper{
+        max-height: 600px;
     }
 }
